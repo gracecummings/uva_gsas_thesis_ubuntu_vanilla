@@ -1,0 +1,28 @@
+To make the October 2021 version of the UVa GSAS LaTex thesis template work on the texlive installs available from the Ubuntu libraries is non trivial. I had a borked version of LaTex running on my local distribution, so here is what I did to get it running. This template was modified to run on a older version of Biblatex, so most humanities citations are not available in this repo.
+
+First, I had to uninstall texlive (several times)
+
+`sudo apt remove --purge tex-common '^texlive'`
+`sudo rm -rf /etc/texmf/`
+`sudo apt-get remove --purge tex-common texlive-*`
+`sudo apt autoremove`
+
+Now, reinstall it
+
+`sudo apt install tex-common`
+`sudo apt install texlive-base`
+`sudo apt install texlive-bibtex-extra`
+`sudo apt install texlive-extra-utils
+`sudo apt install texlive-pstricks`
+`sudo apt install texlive-latex-extra`
+`sudo apt install texlive-xetex`
+`sudo apt install biber`
+
+
+Now, to actually tex the thing, do
+
+`xelatex UVA_ETD_template.tex`
+`biber UVA_ETD_template`
+`xelatex UVA_ETD_template.tex`
+
+`
