@@ -1,0 +1,14 @@
+*.tex~
+*~
+*.nlo
+*.lot
+*.log
+*.lof
+*.blg
+*.bbl
+*.bcf
+*.toc
+*.out
+*.aux
+*.run.xml
+*.pdf

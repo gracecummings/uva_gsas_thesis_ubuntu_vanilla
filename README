@@ -1,4 +1,4 @@
-To make the October 2021 version of the UVa GSAS LaTex thesis template work on the texlive installs available from the Ubuntu libraries is non trivial. I had a borked version of LaTex running on my local distribution, so here is what I did to get it running. This template was modified to run on a older version of Biblatex, so most humanities citations are not available in this repo.
+To make the October 2021 version of the UVa GSAS LaTex thesis template work on the texlive installs available from the Ubuntu 10.04 libraries is non trivial. I had a borked version of LaTex running on my local distribution, so here is what I did to get it running. This template was modified to run on a older version of Biblatex, so most humanities citations are not available in this repo.
 
 First, I had to uninstall texlive (several times)
 
@@ -25,4 +25,4 @@ Now, to actually tex the thing, do
 `biber UVA_ETD_template`
 `xelatex UVA_ETD_template.tex`
 
-`
+If you want a more modoulare version of this repo, with a bit more flexibilty, I suggest using the `UVA_template_module.tex` version. This is one that I have customized from the one originally done by Ricky Patterson to follow a more scientific tex paper-writing structure, and to make it easier to re-shuffle orders and stuff.
